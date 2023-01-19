@@ -1,2 +1,4 @@
 # Thesis-BlockchainVoting
-This is a repo for our thesis oh yeah 
+This contains the source code for our thesis.
+
+Includes the smart contract written in solidty & me when I.
