@@ -25,11 +25,18 @@ contract Voting {
         uint indexed _candidateId
     );
 
+    //Print a receipt after they have voted
+    event receipt(
+    address indexed voter,
+    uint candidateId,
+    string  candidateName
+    );
+
     //Constructor to initialized state variables
     constructor(){
         //Initialized candidate names
-        addCandidate("President 1");
-        addCandidate("President 2");
+        addCandidate("John Doe");
+        addCandidate("Mary Jane");
     }
     //Add Candidate function
     //must only be accessed by the me when i 
@@ -56,7 +63,13 @@ contract Voting {
 
             //trigger voted event
             emit votedEvent(_candidateId);
+
+            //For printing receipt
+            emit receipt(msg.sender, _candidateId, candidates[_candidateId].name);
+
     }
+
+    
 
 
 
