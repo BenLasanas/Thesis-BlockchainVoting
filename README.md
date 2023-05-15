@@ -1,4 +1,4 @@
 # Thesis-BlockchainVoting
-This contains the source code for our thesis.
+This contains the source code of the Smart Contract used in our thesis.
 
-Includes the smart contract written in solidty & me when I.
+Written in Solidity 0.8.0^ and developed and deployed using RemixIDE. 
